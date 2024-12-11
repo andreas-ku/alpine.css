@@ -1,0 +1,23 @@
+{
+  "name": "@repo/alpinecss",
+  "version": "0.0.0",
+  "main": "index.js",
+  "exports": {
+    "./alpinecss": "./src/alpine.css"
+  },
+  "scripts": {
+    "build": "lightningcss --minify --bundle --targets \">= 0.25%\" src/alpine.css -o dist/alpine.min.css",
+    "filesize": "./scripts/filesize.sh",
+    "lint": "stylelint \"src/*.css\"",
+    "lint:fix": "stylelint \"src/*.css\" --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "lightningcss-cli": "^1.28.1",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}

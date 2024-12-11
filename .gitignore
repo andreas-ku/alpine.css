@@ -1,0 +1,13 @@
+node_modules
+.turbo
+.astro
+*.log
+dist
+dist-ssr
+*.local
+server/dist
+public/dist
+.env
+.cache
+.idea
+.vscode

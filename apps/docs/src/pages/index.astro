@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = 'Alpine.css';
+const allPosts = await Astro.glob('./updates/*.md');
+---
+<BaseLayout pageTitle={pageTitle}>
+    A <i>minimal</i> stylesheet for mostly text-based websites.
+
+    <h2>Features</h2>
+
+    <ul>
+        <li>Works great with markdown (classless CSS).</li>
+        <li>Simple, accessible and intuitive.</li>
+        <li>Uses semantic HTML.</li>
+        <li>Fluid responsive typography and spacing.</li>
+        <li>Fast! It's under 1KB and using only system fonts.</li>
+    </ul>
+
+    <h2>Demo</h2>
+
+    <ul>
+        {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    </ul>
+
+    <!--<p>Checkout the <a href="/demo">demo page</a> or see it being used in a <a href="/updates/000-example_blog_post">sample blog post</a>.</p>-->
+
+    <h2>Installation</h2>
+
+    <p>TBA</p>
+
+    <h2>Inspirations</h2>
+    <dl>
+        <dt><a href="https://wruby.btxx.org/">wruby</a></dt>
+        <dd>A minimal static site generator</dd>
+
+        <dt><a href="https://simplecss.org/">Simple.css</a></dt>
+        <dd>A classless CSS framework</dd>
+    </dl>
+
+    <!--<h2>Latest updates</h2>-->
+
+
+</BaseLayout>
+

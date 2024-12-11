@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["dist/**"],
+      "env": ["BASE"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "env": ["BASE"]
+    },
+    "filesize": {},
+    "lint": {},
+    "lint:fix": {},
+    "test:a11y": {},
+    "test:a11y:ci": {},
+    "test:visual_regression:build": {
+      "env": ["BASE_URL"]
+    },
+    "test:visual_regression:run": {
+      "env": ["BASE_URL"]
+    },
+    "test:visual_regression:update:update": {
+      "env": ["BASE_URL"]
+    }
+  }
+}

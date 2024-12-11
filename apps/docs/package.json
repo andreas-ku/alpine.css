@@ -1,0 +1,27 @@
+{
+  "name": "docs",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --base ${BASE:=}",
+    "start": "astro dev",
+    "build": "astro build  --base ${BASE:=}",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test:a11y": "./scripts/pa11y.sh --dev",
+    "test:a11y:ci": "./scripts/pa11y.sh",
+    "test:visual_regression:build": "BASE_URL=${BASE_URL}  scripts/visual_regression_build.sh",
+    "test:visual_regression:run": "BASE_URL=${BASE_URL}  scripts/visual_regression_run.sh",
+    "test:visual_regression:update": "BASE_URL=${BASE_URL} scripts/visual_regression_run.sh update"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.9",
+    "@repo/alpinecss": "*",
+    "astro": "^4.16.10"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0"
+  }
+}

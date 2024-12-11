@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "filesize": "turbo filesize",
+    "format": "prettier --write \"**/*.{ts,tsx,md,css}\"",
+    "format:check": "prettier --list-different \"**/*.{ts,tsx,md,css}\"",
+    "test:a11y": "turbo test:a11y",
+    "test:a11y:ci": "turbo test:a11y:ci",
+    "test:visual_regression:build": "BASE_URL=${BASE_URL} turbo test:visual_regression:build",
+    "test:visual_regression:run": "BASE_URL=${BASE_URL} turbo test:visual_regression:run",
+    "test:visual_regression:update": "BASE_URL=${BASE_URL} turbo test:visual_regression:update"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.10",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.2.3"
+  },
+  "name": "with-vite",
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "apps/docs",
+    "packages/alpinecss"
+  ]
+}
