@@ -1,7 +1,6 @@
 {
   "name": "@repo/alpinecss",
   "version": "0.0.0",
-  "main": "index.js",
   "exports": {
     "./alpinecss": "./src/alpine.css"
   },
