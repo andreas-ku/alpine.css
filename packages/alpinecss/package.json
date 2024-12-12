@@ -5,6 +5,7 @@
   "exports": {
     "./alpinecss": "./src/alpine.css"
   },
+  "style": "dist/alpine.min.css",
   "files": [
     "src/alpine.css",
     "dist/alpine.min.css"
@@ -16,7 +17,7 @@
     "lint:fix": "stylelint \"src/*.css\" --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "andreas-ku",
   "license": "MIT",
   "description": "",
   "devDependencies": {
