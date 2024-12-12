@@ -1,7 +1,7 @@
-# @repo/alpinecss
+# alpinecss
 
 ## 0.1.0
 
 ### Minor Changes
 
-- 2735c6a: Initial release
+- 8c64d55: Initial release
