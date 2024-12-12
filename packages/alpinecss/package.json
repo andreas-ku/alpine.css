@@ -9,8 +9,7 @@
     "build": "lightningcss --minify --bundle --targets \">= 0.25%\" alpine.css -o alpine.min.css",
     "filesize": "./scripts/filesize.sh",
     "lint": "stylelint \"*.css\"",
-    "lint:fix": "stylelint \"*.css\" --fix",
-    "publish": "npm run build && changeset publish"
+    "lint:fix": "stylelint \"*.css\" --fix"
   },
   "keywords": [],
   "author": "andreas-ku",
