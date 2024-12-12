@@ -1,19 +1,15 @@
 {
   "name": "@repo/alpinecss",
-  "version": "0.0.0",
-  "exports": {
-    "./alpinecss": "./src/alpine.css"
-  },
-  "style": "dist/alpine.min.css",
+  "version": "0.1.0",
   "files": [
-    "src/alpine.css",
-    "dist/alpine.min.css"
+    "alpine.css",
+    "alpine.min.css"
   ],
   "scripts": {
-    "build": "lightningcss --minify --bundle --targets \">= 0.25%\" src/alpine.css -o dist/alpine.min.css",
+    "build": "lightningcss --minify --bundle --targets \">= 0.25%\" alpine.css -o alpine.min.css",
     "filesize": "./scripts/filesize.sh",
-    "lint": "stylelint \"src/*.css\"",
-    "lint:fix": "stylelint \"src/*.css\" --fix"
+    "lint": "stylelint \"*.css\"",
+    "lint:fix": "stylelint \"*.css\" --fix"
   },
   "keywords": [],
   "author": "andreas-ku",

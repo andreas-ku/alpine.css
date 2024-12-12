@@ -1,6 +1,6 @@
 #!/bin/bash
 
-   CSS_FILE="./dist/alpine.min.css"
+   CSS_FILE="./alpine.min.css"
 
    if [ ! -f "$CSS_FILE" ]; then
      echo "File not found: $CSS_FILE"
