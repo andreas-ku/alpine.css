@@ -15,6 +15,7 @@
     "filesize": {},
     "lint": {},
     "lint:fix": {},
+    "publish": {},
     "test:a11y": {},
     "test:a11y:ci": {},
     "test:visual_regression:build": {
