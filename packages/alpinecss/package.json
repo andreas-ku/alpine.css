@@ -10,7 +10,6 @@
     "filesize": "./scripts/filesize.sh",
     "lint": "stylelint \"*.css\"",
     "lint:fix": "stylelint \"*.css\" --fix",
-    "publish": "npm run build && changeset publish"
   },
   "keywords": [],
   "author": "andreas-ku",

@@ -8,7 +8,7 @@
     "filesize": "turbo filesize",
     "format": "prettier --write \"**/*.{ts,tsx,md,css}\"",
     "format:check": "prettier --list-different \"**/*.{ts,tsx,md,css}\"",
-    "publish": "turbo publish",
+    "publish": "npm run build && changeset publish",
     "test:a11y": "turbo test:a11y",
     "test:a11y:ci": "turbo test:a11y:ci",
     "test:visual_regression:build": "BASE_URL=${BASE_URL} turbo test:visual_regression:build",
