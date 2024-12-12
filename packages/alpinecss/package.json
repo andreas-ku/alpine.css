@@ -1,10 +1,12 @@
 {
   "name": "@repo/alpinecss",
   "version": "0.0.0",
-  "main": "index.js",
-  "exports": {
-    "./alpinecss": "./src/alpine.css"
-  },
+  "main": "dist/alpine.min.css",
+  "style": "dist/alpine.min.css",
+  "files": [
+    "src/alpine.css",
+    "dist/alpine.min.css"
+  ],
   "scripts": {
     "build": "lightningcss --minify --bundle --targets \">= 0.25%\" src/alpine.css -o dist/alpine.min.css",
     "filesize": "./scripts/filesize.sh",
@@ -12,7 +14,7 @@
     "lint:fix": "stylelint \"src/*.css\" --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "andreas-ku",
   "license": "MIT",
   "description": "",
   "devDependencies": {
