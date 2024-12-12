@@ -23,7 +23,7 @@
     "test:visual_regression:run": {
       "env": ["BASE_URL"]
     },
-    "test:visual_regression:update:update": {
+    "test:visual_regression:update": {
       "env": ["BASE_URL"]
     }
   }
