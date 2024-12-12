@@ -5,6 +5,10 @@
   "exports": {
     "./alpinecss": "./src/alpine.css"
   },
+  "files": [
+    "src/alpine.css",
+    "dist/alpine.min.css"
+  ],
   "scripts": {
     "build": "lightningcss --minify --bundle --targets \">= 0.25%\" src/alpine.css -o dist/alpine.min.css",
     "filesize": "./scripts/filesize.sh",
